@@ -1,15 +1,25 @@
 [user]
-	name = Jan Joseph Concepcion
-	email = jconcep2@mail.sfsu.edu
+    name = Jan Joseph Concepcion
+    email = jconcep2@mail.sfsu.edu
 [core]
-	editor = vim
-	autocrlf = input
-	safecrlf = true
+    editor = vim
+    autocrlf = input
+    safecrlf = true
+[merge]
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    dt = difftool
+    mt = mergetool
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
